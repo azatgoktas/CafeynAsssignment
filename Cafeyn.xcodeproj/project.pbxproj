@@ -49,6 +49,7 @@
 		8E4DA2AC2C8B37A800E461E6 /* CafeynUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeynUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E4DA2B02C8B37A800E461E6 /* CafeynUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeynUITests.swift; sourceTree = "<group>"; };
 		8E4DA2B22C8B37A800E461E6 /* CafeynUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeynUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8E4DA2C02C8B3A1800E461E6 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		8E4DA28E2C8B37A600E461E6 /* Cafeyn */ = {
 			isa = PBXGroup;
 			children = (
+				8E4DA2C02C8B3A1800E461E6 /* Networking */,
 				8E4DA28F2C8B37A600E461E6 /* AppDelegate.swift */,
 				8E4DA2912C8B37A600E461E6 /* SceneDelegate.swift */,
 				8E4DA2932C8B37A600E461E6 /* ViewController.swift */,
