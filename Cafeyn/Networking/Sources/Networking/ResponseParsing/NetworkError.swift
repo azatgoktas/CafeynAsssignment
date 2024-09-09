@@ -1,6 +1,6 @@
 //
 //  NetworkError.swift
-//  
+//
 //
 //  Created by Azat Goktas on 06/09/2024.
 //
