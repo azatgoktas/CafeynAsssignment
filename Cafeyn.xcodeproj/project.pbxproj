@@ -9,24 +9,38 @@
 /* Begin PBXBuildFile section */
 		8E4DA2902C8B37A600E461E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA28F2C8B37A600E461E6 /* AppDelegate.swift */; };
 		8E4DA2922C8B37A600E461E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2912C8B37A600E461E6 /* SceneDelegate.swift */; };
-		8E4DA2942C8B37A600E461E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2932C8B37A600E461E6 /* ViewController.swift */; };
-		8E4DA2972C8B37A600E461E6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8E4DA2962C8B37A600E461E6 /* Base */; };
 		8E4DA2992C8B37A700E461E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E4DA2982C8B37A700E461E6 /* Assets.xcassets */; };
-		8E4DA29C2C8B37A700E461E6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8E4DA29B2C8B37A700E461E6 /* Base */; };
-		8E4DA2A72C8B37A800E461E6 /* CafeynTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2A62C8B37A800E461E6 /* CafeynTests.swift */; };
-		8E4DA2B12C8B37A800E461E6 /* CafeynUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2B02C8B37A800E461E6 /* CafeynUITests.swift */; };
-		8E4DA2B32C8B37A800E461E6 /* CafeynUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2B22C8B37A800E461E6 /* CafeynUITestsLaunchTests.swift */; };
+		8E4DA2C42C8ED1F100E461E6 /* ContentSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2C32C8ED1F100E461E6 /* ContentSelectionViewController.swift */; };
+		8E4DA2C62C8ED8ED00E461E6 /* ContentSelectionContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2C52C8ED8ED00E461E6 /* ContentSelectionContracts.swift */; };
+		8E4DA2C82C8EDB7300E461E6 /* ContentSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2C72C8EDB7300E461E6 /* ContentSelectionViewModel.swift */; };
+		8E4DA2CA2C8EDBC100E461E6 /* ContentSelectionViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2C92C8EDBC100E461E6 /* ContentSelectionViewBuilder.swift */; };
+		8E4DA2CD2C8EE38300E461E6 /* ContentSelectionEmptySelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2CC2C8EE38300E461E6 /* ContentSelectionEmptySelectCell.swift */; };
+		8E4DA2D02C8EE91300E461E6 /* String+Localisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2CF2C8EE91300E461E6 /* String+Localisation.swift */; };
+		8E4DA2D42C8EE98000E461E6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8E4DA2D32C8EE98000E461E6 /* Localizable.xcstrings */; };
+		8E4DA2D92C8F201500E461E6 /* ContentItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2D82C8F201500E461E6 /* ContentItemCell.swift */; };
+		8E4DA2DC2C8F203100E461E6 /* ContentItemPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2DB2C8F203100E461E6 /* ContentItemPresentation.swift */; };
+		8E4DA2DF2C8F6AF300E461E6 /* CafeynBaseUrlHaving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2DE2C8F6AF300E461E6 /* CafeynBaseUrlHaving.swift */; };
+		8E4DA2E12C8F6B2B00E461E6 /* CafeynServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2E02C8F6B2B00E461E6 /* CafeynServiceRequest.swift */; };
+		8E4DA2E32C8F6B7200E461E6 /* CafeynApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2E22C8F6B7200E461E6 /* CafeynApiService.swift */; };
+		8E4DA2E62C8F6D7A00E461E6 /* TopicRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2E52C8F6D7A00E461E6 /* TopicRepository.swift */; };
+		8E4DA2E92C8F6FA500E461E6 /* CafeynTopicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2E82C8F6FA500E461E6 /* CafeynTopicRequest.swift */; };
+		8E4DA2EB2C8F6FCC00E461E6 /* CafeynTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2EA2C8F6FCC00E461E6 /* CafeynTopic.swift */; };
+		8E4DA2EE2C8F702300E461E6 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 8E4DA2ED2C8F702300E461E6 /* Networking */; };
+		8E4DA2F12C8F79CA00E461E6 /* ContentSelectionPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2F02C8F79CA00E461E6 /* ContentSelectionPresentation.swift */; };
+		8E4DA2F32C8F79D600E461E6 /* TopicPresnetation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2F22C8F79D600E461E6 /* TopicPresnetation.swift */; };
+		8E4DA2F52C8F949C00E461E6 /* UITableView+Registering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2F42C8F949C00E461E6 /* UITableView+Registering.swift */; };
+		8E4DA2F72C8F989E00E461E6 /* ContentSelectionSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2F62C8F989E00E461E6 /* ContentSelectionSectionHeaderView.swift */; };
+		8E4DA2F92C8FA1D600E461E6 /* CafeynLocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2F82C8FA1D600E461E6 /* CafeynLocalService.swift */; };
+		8E4DA2FB2C8FB31200E461E6 /* TopicRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2FA2C8FB31200E461E6 /* TopicRepositoryTests.swift */; };
+		8E4DA2FE2C8FB44D00E461E6 /* CafeynLocalServingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2FD2C8FB44D00E461E6 /* CafeynLocalServingMock.swift */; };
+		8E4DA3002C8FB46800E461E6 /* CafeynServingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA2FF2C8FB46800E461E6 /* CafeynServingMock.swift */; };
+		8E4DA3022C8FB57100E461E6 /* ContentSelectionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA3012C8FB57100E461E6 /* ContentSelectionViewModelTests.swift */; };
+		8E4DA3042C90455F00E461E6 /* TopicRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA3032C90455F00E461E6 /* TopicRepositoryMock.swift */; };
+		8E4DA3062C90457A00E461E6 /* ContentSelectionViewModelDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4DA3052C90457A00E461E6 /* ContentSelectionViewModelDelegateMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		8E4DA2A32C8B37A800E461E6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8E4DA2842C8B37A600E461E6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8E4DA28B2C8B37A600E461E6;
-			remoteInfo = Cafeyn;
-		};
-		8E4DA2AD2C8B37A800E461E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8E4DA2842C8B37A600E461E6 /* Project object */;
 			proxyType = 1;
@@ -39,17 +53,36 @@
 		8E4DA28C2C8B37A600E461E6 /* Cafeyn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cafeyn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E4DA28F2C8B37A600E461E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E4DA2912C8B37A600E461E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8E4DA2932C8B37A600E461E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8E4DA2962C8B37A600E461E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E4DA2982C8B37A700E461E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8E4DA29B2C8B37A700E461E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E4DA29D2C8B37A700E461E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E4DA2A22C8B37A800E461E6 /* CafeynTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeynTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E4DA2A62C8B37A800E461E6 /* CafeynTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeynTests.swift; sourceTree = "<group>"; };
-		8E4DA2AC2C8B37A800E461E6 /* CafeynUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeynUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E4DA2B02C8B37A800E461E6 /* CafeynUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeynUITests.swift; sourceTree = "<group>"; };
-		8E4DA2B22C8B37A800E461E6 /* CafeynUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeynUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8E4DA2C02C8B3A1800E461E6 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
+		8E4DA2C32C8ED1F100E461E6 /* ContentSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSelectionViewController.swift; sourceTree = "<group>"; };
+		8E4DA2C52C8ED8ED00E461E6 /* ContentSelectionContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSelectionContracts.swift; sourceTree = "<group>"; };
+		8E4DA2C72C8EDB7300E461E6 /* ContentSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSelectionViewModel.swift; sourceTree = "<group>"; };
+		8E4DA2C92C8EDBC100E461E6 /* ContentSelectionViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSelectionViewBuilder.swift; sourceTree = "<group>"; };
+		8E4DA2CC2C8EE38300E461E6 /* ContentSelectionEmptySelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSelectionEmptySelectCell.swift; sourceTree = "<group>"; };
+		8E4DA2CF2C8EE91300E461E6 /* String+Localisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localisation.swift"; sourceTree = "<group>"; };
+		8E4DA2D32C8EE98000E461E6 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		8E4DA2D82C8F201500E461E6 /* ContentItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentItemCell.swift; sourceTree = "<group>"; };
+		8E4DA2DB2C8F203100E461E6 /* ContentItemPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentItemPresentation.swift; sourceTree = "<group>"; };
+		8E4DA2DE2C8F6AF300E461E6 /* CafeynBaseUrlHaving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeynBaseUrlHaving.swift; sourceTree = "<group>"; };
+		8E4DA2E02C8F6B2B00E461E6 /* CafeynServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeynServiceRequest.swift; sourceTree = "<group>"; };
+		8E4DA2E22C8F6B7200E461E6 /* CafeynApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeynApiService.swift; sourceTree = "<group>"; };
+		8E4DA2E52C8F6D7A00E461E6 /* TopicRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicRepository.swift; sourceTree = "<group>"; };
+		8E4DA2E82C8F6FA500E461E6 /* CafeynTopicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeynTopicRequest.swift; sourceTree = "<group>"; };
+		8E4DA2EA2C8F6FCC00E461E6 /* CafeynTopic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeynTopic.swift; sourceTree = "<group>"; };
+		8E4DA2F02C8F79CA00E461E6 /* ContentSelectionPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSelectionPresentation.swift; sourceTree = "<group>"; };
+		8E4DA2F22C8F79D600E461E6 /* TopicPresnetation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicPresnetation.swift; sourceTree = "<group>"; };
+		8E4DA2F42C8F949C00E461E6 /* UITableView+Registering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Registering.swift"; sourceTree = "<group>"; };
+		8E4DA2F62C8F989E00E461E6 /* ContentSelectionSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSelectionSectionHeaderView.swift; sourceTree = "<group>"; };
+		8E4DA2F82C8FA1D600E461E6 /* CafeynLocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeynLocalService.swift; sourceTree = "<group>"; };
+		8E4DA2FA2C8FB31200E461E6 /* TopicRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicRepositoryTests.swift; sourceTree = "<group>"; };
+		8E4DA2FD2C8FB44D00E461E6 /* CafeynLocalServingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeynLocalServingMock.swift; sourceTree = "<group>"; };
+		8E4DA2FF2C8FB46800E461E6 /* CafeynServingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeynServingMock.swift; sourceTree = "<group>"; };
+		8E4DA3012C8FB57100E461E6 /* ContentSelectionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSelectionViewModelTests.swift; sourceTree = "<group>"; };
+		8E4DA3032C90455F00E461E6 /* TopicRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicRepositoryMock.swift; sourceTree = "<group>"; };
+		8E4DA3052C90457A00E461E6 /* ContentSelectionViewModelDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSelectionViewModelDelegateMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,17 +90,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E4DA2EE2C8F702300E461E6 /* Networking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8E4DA29F2C8B37A800E461E6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8E4DA2A92C8B37A800E461E6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -82,8 +109,8 @@
 			children = (
 				8E4DA28E2C8B37A600E461E6 /* Cafeyn */,
 				8E4DA2A52C8B37A800E461E6 /* CafeynTests */,
-				8E4DA2AF2C8B37A800E461E6 /* CafeynUITests */,
 				8E4DA28D2C8B37A600E461E6 /* Products */,
+				8E4DA2EC2C8F702300E461E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,7 +119,6 @@
 			children = (
 				8E4DA28C2C8B37A600E461E6 /* Cafeyn.app */,
 				8E4DA2A22C8B37A800E461E6 /* CafeynTests.xctest */,
-				8E4DA2AC2C8B37A800E461E6 /* CafeynUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,13 +126,14 @@
 		8E4DA28E2C8B37A600E461E6 /* Cafeyn */ = {
 			isa = PBXGroup;
 			children = (
+				8E4DA2DD2C8F6ACC00E461E6 /* Services */,
+				8E4DA2D12C8EE96D00E461E6 /* Resources */,
+				8E4DA2CE2C8EE8F900E461E6 /* Helpers */,
+				8E4DA2C12C8ED1D000E461E6 /* Scenes */,
 				8E4DA2C02C8B3A1800E461E6 /* Networking */,
 				8E4DA28F2C8B37A600E461E6 /* AppDelegate.swift */,
 				8E4DA2912C8B37A600E461E6 /* SceneDelegate.swift */,
-				8E4DA2932C8B37A600E461E6 /* ViewController.swift */,
-				8E4DA2952C8B37A600E461E6 /* Main.storyboard */,
 				8E4DA2982C8B37A700E461E6 /* Assets.xcassets */,
-				8E4DA29A2C8B37A700E461E6 /* LaunchScreen.storyboard */,
 				8E4DA29D2C8B37A700E461E6 /* Info.plist */,
 			);
 			path = Cafeyn;
@@ -115,18 +142,133 @@
 		8E4DA2A52C8B37A800E461E6 /* CafeynTests */ = {
 			isa = PBXGroup;
 			children = (
-				8E4DA2A62C8B37A800E461E6 /* CafeynTests.swift */,
+				8E4DA2FC2C8FB43C00E461E6 /* Mocks */,
+				8E4DA3012C8FB57100E461E6 /* ContentSelectionViewModelTests.swift */,
+				8E4DA2FA2C8FB31200E461E6 /* TopicRepositoryTests.swift */,
 			);
 			path = CafeynTests;
 			sourceTree = "<group>";
 		};
-		8E4DA2AF2C8B37A800E461E6 /* CafeynUITests */ = {
+		8E4DA2C12C8ED1D000E461E6 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				8E4DA2B02C8B37A800E461E6 /* CafeynUITests.swift */,
-				8E4DA2B22C8B37A800E461E6 /* CafeynUITestsLaunchTests.swift */,
+				8E4DA2C22C8ED1D500E461E6 /* ContentSelection */,
 			);
-			path = CafeynUITests;
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8E4DA2C22C8ED1D500E461E6 /* ContentSelection */ = {
+			isa = PBXGroup;
+			children = (
+				8E4DA2EF2C8F79C000E461E6 /* Models */,
+				8E4DA2E42C8F6D6B00E461E6 /* Repository */,
+				8E4DA2CB2C8EE35C00E461E6 /* Views */,
+				8E4DA2C32C8ED1F100E461E6 /* ContentSelectionViewController.swift */,
+				8E4DA2C52C8ED8ED00E461E6 /* ContentSelectionContracts.swift */,
+				8E4DA2C72C8EDB7300E461E6 /* ContentSelectionViewModel.swift */,
+				8E4DA2C92C8EDBC100E461E6 /* ContentSelectionViewBuilder.swift */,
+			);
+			path = ContentSelection;
+			sourceTree = "<group>";
+		};
+		8E4DA2CB2C8EE35C00E461E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8E4DA2DA2C8F202700E461E6 /* ContentItemCell */,
+				8E4DA2CC2C8EE38300E461E6 /* ContentSelectionEmptySelectCell.swift */,
+				8E4DA2F62C8F989E00E461E6 /* ContentSelectionSectionHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8E4DA2CE2C8EE8F900E461E6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8E4DA2CF2C8EE91300E461E6 /* String+Localisation.swift */,
+				8E4DA2F42C8F949C00E461E6 /* UITableView+Registering.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8E4DA2D12C8EE96D00E461E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E4DA2D22C8EE97300E461E6 /* Localisation */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8E4DA2D22C8EE97300E461E6 /* Localisation */ = {
+			isa = PBXGroup;
+			children = (
+				8E4DA2D32C8EE98000E461E6 /* Localizable.xcstrings */,
+			);
+			path = Localisation;
+			sourceTree = "<group>";
+		};
+		8E4DA2DA2C8F202700E461E6 /* ContentItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				8E4DA2DB2C8F203100E461E6 /* ContentItemPresentation.swift */,
+				8E4DA2D82C8F201500E461E6 /* ContentItemCell.swift */,
+			);
+			path = ContentItemCell;
+			sourceTree = "<group>";
+		};
+		8E4DA2DD2C8F6ACC00E461E6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8E4DA2E72C8F6F9C00E461E6 /* Entities */,
+				8E4DA2DE2C8F6AF300E461E6 /* CafeynBaseUrlHaving.swift */,
+				8E4DA2E02C8F6B2B00E461E6 /* CafeynServiceRequest.swift */,
+				8E4DA2E22C8F6B7200E461E6 /* CafeynApiService.swift */,
+				8E4DA2F82C8FA1D600E461E6 /* CafeynLocalService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8E4DA2E42C8F6D6B00E461E6 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				8E4DA2E52C8F6D7A00E461E6 /* TopicRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		8E4DA2E72C8F6F9C00E461E6 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				8E4DA2E82C8F6FA500E461E6 /* CafeynTopicRequest.swift */,
+				8E4DA2EA2C8F6FCC00E461E6 /* CafeynTopic.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		8E4DA2EC2C8F702300E461E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E4DA2EF2C8F79C000E461E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E4DA2F02C8F79CA00E461E6 /* ContentSelectionPresentation.swift */,
+				8E4DA2F22C8F79D600E461E6 /* TopicPresnetation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8E4DA2FC2C8FB43C00E461E6 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8E4DA2FD2C8FB44D00E461E6 /* CafeynLocalServingMock.swift */,
+				8E4DA2FF2C8FB46800E461E6 /* CafeynServingMock.swift */,
+				8E4DA3032C90455F00E461E6 /* TopicRepositoryMock.swift */,
+				8E4DA3052C90457A00E461E6 /* ContentSelectionViewModelDelegateMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +287,9 @@
 			dependencies = (
 			);
 			name = Cafeyn;
+			packageProductDependencies = (
+				8E4DA2ED2C8F702300E461E6 /* Networking */,
+			);
 			productName = Cafeyn;
 			productReference = 8E4DA28C2C8B37A600E461E6 /* Cafeyn.app */;
 			productType = "com.apple.product-type.application";
@@ -167,24 +312,6 @@
 			productReference = 8E4DA2A22C8B37A800E461E6 /* CafeynTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8E4DA2AB2C8B37A800E461E6 /* CafeynUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8E4DA2BC2C8B37A800E461E6 /* Build configuration list for PBXNativeTarget "CafeynUITests" */;
-			buildPhases = (
-				8E4DA2A82C8B37A800E461E6 /* Sources */,
-				8E4DA2A92C8B37A800E461E6 /* Frameworks */,
-				8E4DA2AA2C8B37A800E461E6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8E4DA2AE2C8B37A800E461E6 /* PBXTargetDependency */,
-			);
-			name = CafeynUITests;
-			productName = CafeynUITests;
-			productReference = 8E4DA2AC2C8B37A800E461E6 /* CafeynUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,10 +326,6 @@
 						CreatedOnToolsVersion = 15.3;
 					};
 					8E4DA2A12C8B37A800E461E6 = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = 8E4DA28B2C8B37A600E461E6;
-					};
-					8E4DA2AB2C8B37A800E461E6 = {
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = 8E4DA28B2C8B37A600E461E6;
 					};
@@ -223,7 +346,6 @@
 			targets = (
 				8E4DA28B2C8B37A600E461E6 /* Cafeyn */,
 				8E4DA2A12C8B37A800E461E6 /* CafeynTests */,
-				8E4DA2AB2C8B37A800E461E6 /* CafeynUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,19 +356,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E4DA2992C8B37A700E461E6 /* Assets.xcassets in Resources */,
-				8E4DA29C2C8B37A700E461E6 /* Base in Resources */,
-				8E4DA2972C8B37A600E461E6 /* Base in Resources */,
+				8E4DA2D42C8EE98000E461E6 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8E4DA2A02C8B37A800E461E6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8E4DA2AA2C8B37A800E461E6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -260,9 +374,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E4DA2942C8B37A600E461E6 /* ViewController.swift in Sources */,
+				8E4DA2F32C8F79D600E461E6 /* TopicPresnetation.swift in Sources */,
+				8E4DA2F12C8F79CA00E461E6 /* ContentSelectionPresentation.swift in Sources */,
+				8E4DA2CD2C8EE38300E461E6 /* ContentSelectionEmptySelectCell.swift in Sources */,
+				8E4DA2E92C8F6FA500E461E6 /* CafeynTopicRequest.swift in Sources */,
+				8E4DA2DF2C8F6AF300E461E6 /* CafeynBaseUrlHaving.swift in Sources */,
+				8E4DA2E12C8F6B2B00E461E6 /* CafeynServiceRequest.swift in Sources */,
+				8E4DA2C62C8ED8ED00E461E6 /* ContentSelectionContracts.swift in Sources */,
+				8E4DA2F92C8FA1D600E461E6 /* CafeynLocalService.swift in Sources */,
+				8E4DA2F52C8F949C00E461E6 /* UITableView+Registering.swift in Sources */,
+				8E4DA2D92C8F201500E461E6 /* ContentItemCell.swift in Sources */,
+				8E4DA2C82C8EDB7300E461E6 /* ContentSelectionViewModel.swift in Sources */,
+				8E4DA2D02C8EE91300E461E6 /* String+Localisation.swift in Sources */,
 				8E4DA2902C8B37A600E461E6 /* AppDelegate.swift in Sources */,
 				8E4DA2922C8B37A600E461E6 /* SceneDelegate.swift in Sources */,
+				8E4DA2EB2C8F6FCC00E461E6 /* CafeynTopic.swift in Sources */,
+				8E4DA2C42C8ED1F100E461E6 /* ContentSelectionViewController.swift in Sources */,
+				8E4DA2F72C8F989E00E461E6 /* ContentSelectionSectionHeaderView.swift in Sources */,
+				8E4DA2E32C8F6B7200E461E6 /* CafeynApiService.swift in Sources */,
+				8E4DA2DC2C8F203100E461E6 /* ContentItemPresentation.swift in Sources */,
+				8E4DA2CA2C8EDBC100E461E6 /* ContentSelectionViewBuilder.swift in Sources */,
+				8E4DA2E62C8F6D7A00E461E6 /* TopicRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,16 +402,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E4DA2A72C8B37A800E461E6 /* CafeynTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8E4DA2A82C8B37A800E461E6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8E4DA2B32C8B37A800E461E6 /* CafeynUITestsLaunchTests.swift in Sources */,
-				8E4DA2B12C8B37A800E461E6 /* CafeynUITests.swift in Sources */,
+				8E4DA3002C8FB46800E461E6 /* CafeynServingMock.swift in Sources */,
+				8E4DA3042C90455F00E461E6 /* TopicRepositoryMock.swift in Sources */,
+				8E4DA3062C90457A00E461E6 /* ContentSelectionViewModelDelegateMock.swift in Sources */,
+				8E4DA3022C8FB57100E461E6 /* ContentSelectionViewModelTests.swift in Sources */,
+				8E4DA2FE2C8FB44D00E461E6 /* CafeynLocalServingMock.swift in Sources */,
+				8E4DA2FB2C8FB31200E461E6 /* TopicRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,31 +419,7 @@
 			target = 8E4DA28B2C8B37A600E461E6 /* Cafeyn */;
 			targetProxy = 8E4DA2A32C8B37A800E461E6 /* PBXContainerItemProxy */;
 		};
-		8E4DA2AE2C8B37A800E461E6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8E4DA28B2C8B37A600E461E6 /* Cafeyn */;
-			targetProxy = 8E4DA2AD2C8B37A800E461E6 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		8E4DA2952C8B37A600E461E6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8E4DA2962C8B37A600E461E6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8E4DA29A2C8B37A700E461E6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8E4DA29B2C8B37A700E461E6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8E4DA2B42C8B37A800E461E6 /* Debug */ = {
@@ -444,14 +548,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 74FAHTYH42;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Cafeyn/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,14 +576,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 74FAHTYH42;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Cafeyn/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -533,42 +637,6 @@
 			};
 			name = Release;
 		};
-		8E4DA2BD2C8B37A800E461E6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 74FAHTYH42;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.azatgoktas.CafeynUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Cafeyn;
-			};
-			name = Debug;
-		};
-		8E4DA2BE2C8B37A800E461E6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 74FAHTYH42;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.azatgoktas.CafeynUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Cafeyn;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -599,16 +667,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E4DA2BC2C8B37A800E461E6 /* Build configuration list for PBXNativeTarget "CafeynUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8E4DA2BD2C8B37A800E461E6 /* Debug */,
-				8E4DA2BE2C8B37A800E461E6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8E4DA2ED2C8F702300E461E6 /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8E4DA2842C8B37A600E461E6 /* Project object */;
 }
