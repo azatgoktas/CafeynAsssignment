@@ -17,13 +17,11 @@ final class CafeynLocalService: CafeynLocalServing {
     private let userDefaults = UserDefaults.standard
 
     func saveFavorites(_ ids: [String]) {
-        print(ids)
         userDefaults.setValue(ids, forKey: favoritesKey)
     }
 
     func getFavorites() -> [String] {
         let favorites = userDefaults.value(forKey: favoritesKey) as? [String] ?? []
-        print(favorites)
         return favorites
     }
 }
