@@ -28,7 +28,6 @@ final class TopicRepository: TopicRepositoryProtocol {
         switch result {
         case .success(let topics):
             self.topics = topics.flatMap { [$0] + ($0.subTopics ?? []) }
-            print(topics)
             let favorites = getFavorites()
             let allTopicsExceptFavorites = topics.filter { topic in !favorites.contains(where: { $0.id == topic.id }) }
             let presentation = ContentSelectionPresentation(
@@ -38,7 +37,6 @@ final class TopicRepository: TopicRepositoryProtocol {
             )
             return .success(presentation)
         case .failure(let error):
-            print(error)
             return .failure(error)
         }
     }
