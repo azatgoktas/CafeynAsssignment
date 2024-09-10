@@ -87,7 +87,7 @@ final class ContentSelectionViewController: UIViewController {
     }
 
     @objc private func cancelTapped() {
-        // Handle cancel action
+        // This is not doing anything for now since it's only a single page application.
     }
 
     @objc private func saveTapped() {
