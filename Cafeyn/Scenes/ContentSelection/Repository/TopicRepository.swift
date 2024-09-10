@@ -9,7 +9,7 @@ import Foundation
 
 protocol TopicRepositoryProtocol {
     func getTopics() async -> Result<ContentSelectionPresentation, Error>
-    func saveFavorites(presentations: [TopicPresnetation]) async
+    func saveFavorites(presentations: [TopicPresnetation])
 }
 
 final class TopicRepository: TopicRepositoryProtocol {
@@ -29,9 +29,15 @@ final class TopicRepository: TopicRepositoryProtocol {
         case .success(let topics):
             self.topics = topics.flatMap { [$0] + ($0.subTopics ?? []) }
             let favorites = getFavorites()
-            let allTopicsExceptFavorites = topics.filter { topic in !favorites.contains(where: { $0.id == topic.id }) }
+            var favoriteTopics = [CafeynTopic]()
+            for favorite in favorites {
+                if let favTopic = topics.first(where: { $0.id == favorite }) {
+                    favoriteTopics.append(favTopic)
+                }
+            }
+            let allTopicsExceptFavorites = topics.filter { topic in !favoriteTopics.contains(where: { $0.id == topic.id }) }
             let presentation = ContentSelectionPresentation(
-                selectedTopics: map(favorites), 
+                selectedTopics: map(favoriteTopics),
                 topics: map(allTopicsExceptFavorites),
                 originalPositionedTopics: map(topics)
             )
@@ -41,14 +47,19 @@ final class TopicRepository: TopicRepositoryProtocol {
         }
     }
 
-    func saveFavorites(presentations: [TopicPresnetation]) async {
-        let favorites = topics.filter { topic in
-            presentations.contains { $0.id == topic.id }
+    func saveFavorites(presentations: [TopicPresnetation]) {
+        var favorites = [String]()
+        for presentation in presentations {
+            for topic in topics {
+                if topic.id == presentation.id {
+                    favorites.append(topic.id)
+                }
+            }
         }
         localService.saveFavorites(favorites)
     }
 
-    func getFavorites() -> [CafeynTopic] {
+    func getFavorites() -> [String] {
         localService.getFavorites()
     }
 }

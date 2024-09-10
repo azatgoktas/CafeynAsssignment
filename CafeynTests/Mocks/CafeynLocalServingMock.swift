@@ -9,13 +9,13 @@ import Foundation
 @testable import Cafeyn
 
 class CafeynLocalServingMock: CafeynLocalServing {
-    var savedFavorites: [CafeynTopic] = []
+    var savedFavorites: [String] = []
 
-    func saveFavorites(_ topics: [CafeynTopic]) {
+    func saveFavorites(_ topics: [String]) {
         savedFavorites = topics
     }
 
-    func getFavorites() -> [CafeynTopic] {
+    func getFavorites() -> [String] {
         return savedFavorites
     }
 }

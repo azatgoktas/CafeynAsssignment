@@ -8,30 +8,22 @@
 import Foundation
 
 protocol CafeynLocalServing {
-    func getFavorites() -> [CafeynTopic]
-    func saveFavorites(_ favorites: [CafeynTopic])
+    func getFavorites() -> [String]
+    func saveFavorites(_ favorites: [String])
 }
 
 final class CafeynLocalService: CafeynLocalServing {
     private let favoritesKey = "favorites"
+    private let userDefaults = UserDefaults.standard
 
-    func saveFavorites(_ favorites: [CafeynTopic]) {
-        do {
-            let encodedData = try JSONEncoder().encode(favorites)
-            UserDefaults.standard.set(encodedData, forKey: favoritesKey)
-        } catch {
-            print("Error encoding favorites: \(error)")
-        }
+    func saveFavorites(_ ids: [String]) {
+        print(ids)
+        userDefaults.setValue(ids, forKey: favoritesKey)
     }
 
-    func getFavorites() -> [CafeynTopic] {
-        guard let data = UserDefaults.standard.data(forKey: favoritesKey) else { return [] }
-        do {
-            let favorites = try JSONDecoder().decode([CafeynTopic].self, from: data)
-            return favorites
-        } catch {
-            print("Error decoding favorites: \(error)")
-            return []
-        }
+    func getFavorites() -> [String] {
+        let favorites = userDefaults.value(forKey: favoritesKey) as? [String] ?? []
+        print(favorites)
+        return favorites
     }
 }

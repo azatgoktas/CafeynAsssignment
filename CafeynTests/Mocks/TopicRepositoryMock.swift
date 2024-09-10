@@ -20,7 +20,7 @@ class TopicRepositoryMock: TopicRepositoryProtocol {
         return stubbedGetTopicsResult
     }
 
-    func saveFavorites(presentations: [TopicPresnetation]) async {
+    func saveFavorites(presentations: [TopicPresnetation]) {
         // Mock implementation
     }
 }

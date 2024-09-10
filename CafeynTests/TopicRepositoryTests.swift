@@ -72,11 +72,10 @@ final class TopicRepositoryTests: XCTestCase {
                       CafeynTopic(id: "2", name: .init(raw: "Topic 2"), subTopics: nil)]
 
         // When
-        await sut.saveFavorites(presentations: [topic1, topic2])
+        sut.saveFavorites(presentations: [topic1, topic2])
 
         // Then
         XCTAssertEqual(localServiceMock.savedFavorites.count, 2)
-        XCTAssertEqual(localServiceMock.savedFavorites.first?.id, "1")
-        XCTAssertEqual(localServiceMock.savedFavorites[1].name.raw, "Topic 2")
+        XCTAssertEqual(localServiceMock.savedFavorites, ["1", "2"])
     }
 }

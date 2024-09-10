@@ -26,9 +26,7 @@ final class ContentSelectionViewModel: ContentSelectionViewModelProtocol {
     }
 
     func save() {
-        Task {
-            await repository.saveFavorites(presentations: presentation?.selectedTopics ?? [])
-        }
+        repository.saveFavorites(presentations: presentation?.selectedTopics ?? [])
     }
 
     @MainActor
