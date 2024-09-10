@@ -32,10 +32,9 @@ class ContentItemCell: UITableViewCell {
         contentView.addSubview(dragHandleImageView)
 
         NSLayoutConstraint.activate([
-            dragHandleImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            dragHandleImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-            dragHandleImageView.widthAnchor.constraint(equalToConstant: 25),
-            dragHandleImageView.heightAnchor.constraint(equalToConstant: 25)
+            dragHandleImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12),
+            dragHandleImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12),
+            dragHandleImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -12),
         ])
     }
 
